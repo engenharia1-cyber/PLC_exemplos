@@ -1,0 +1,236 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "28/05/2026 09:42",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 81.0,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "POTENTIOMETER",
+                "name": "POT0",
+                "x": 220,
+                "y": 81.0,
+                "icon": "——[POT]——",
+                "comment": "",
+                "parent": null,
+                "analog_pin": "I0.6",
+                "min_value": "0",
+                "max_value": "100",
+                "coords": [
+                  170,
+                  61.0,
+                  270,
+                  101.0
+                ],
+                "tag": "POT0"
+              },
+              {
+                "id": 2,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 360,
+                "y": 81.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "coords": [
+                  310,
+                  61.0,
+                  410,
+                  101.0
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 161.0,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 4,
+                "type": "POTENTIOMETER",
+                "name": "POT1",
+                "x": 220,
+                "y": 161.0,
+                "icon": "——[POT]——",
+                "comment": "",
+                "parent": null,
+                "analog_pin": "I0.7",
+                "min_value": "0",
+                "max_value": "100",
+                "coords": [
+                  170,
+                  141.0,
+                  270,
+                  181.0
+                ],
+                "tag": "POT1"
+              },
+              {
+                "id": 5,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 360,
+                "y": 161.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "coords": [
+                  310,
+                  141.0,
+                  410,
+                  181.0
+                ],
+                "tag": "VAR1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 241.0,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 6,
+                "type": "POTENTIOMETER",
+                "name": "POT2",
+                "x": 220,
+                "y": 241.0,
+                "icon": "——[POT]——",
+                "comment": "",
+                "parent": null,
+                "analog_pin": "I0.8",
+                "min_value": "0",
+                "max_value": "100",
+                "coords": [
+                  170,
+                  221.0,
+                  270,
+                  261.0
+                ],
+                "tag": "POT2"
+              },
+              {
+                "id": 7,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 360,
+                "y": 241.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "coords": [
+                  310,
+                  221.0,
+                  410,
+                  261.0
+                ],
+                "tag": "VAR2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 321.0,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 8,
+                "type": "MATH",
+                "name": "MATH0",
+                "x": 220,
+                "y": 321.0,
+                "icon": "——[MTH]——",
+                "comment": "",
+                "parent": null,
+                "operation": "FORMULA",
+                "source_a": "",
+                "preset": "0",
+                "math_auto_formula": "",
+                "math_custom_formula": "((VAR0+VAR1)+(VAR2/2))",
+                "formula": "((VAR0+VAR1)+(VAR2/2))",
+                "coords": [
+                  170,
+                  301.0,
+                  270,
+                  341.0
+                ],
+                "tag": "MATH0"
+              },
+              {
+                "id": 9,
+                "type": "VARIABLE",
+                "name": "VAR3",
+                "x": 360,
+                "y": 321.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "coords": [
+                  310,
+                  301.0,
+                  410,
+                  341.0
+                ],
+                "tag": "VAR3"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "peripherals": {
+    "max": {
+      "CAN1_enabled": false,
+      "CAN1_baudrate": "250",
+      "CAN2_enabled": false,
+      "CAN2_baudrate": "250",
+      "PWM_enabled": false,
+      "PWM_frequency": "100"
+    }
+  }
+}

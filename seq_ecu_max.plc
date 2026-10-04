@@ -1,0 +1,3491 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "03/03/2026 12:32",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "CONTACT",
+                "name": "T0",
+                "x": 180.0,
+                "y": 80.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "component_nf",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  130.0,
+                  60.0,
+                  230.0,
+                  100.0
+                ],
+                "tag": "T0"
+              },
+              {
+                "id": 1,
+                "type": "TIMER",
+                "name": "T0",
+                "x": 360.0,
+                "y": 80.0,
+                "icon": "——[TIM]——",
+                "preset": "25",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "timer_type": "TON",
+                "coords": [
+                  310.0,
+                  60.0,
+                  410.0,
+                  100.0
+                ],
+                "tag": "T0"
+              },
+              {
+                "id": 3,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 740.0,
+                "y": 80.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  690.0,
+                  60.0,
+                  790.0,
+                  100.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 6,
+                "type": "COUNTER",
+                "name": "C0",
+                "x": 560.0,
+                "y": 80.0,
+                "icon": "——[CONT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "UP",
+                "verify_preset": false,
+                "coords": [
+                  510.0,
+                  60.0,
+                  610.0,
+                  100.0
+                ],
+                "tag": "C0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 4,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 180.0,
+                "y": 160.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  130.0,
+                  140.0,
+                  230.0,
+                  180.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 5,
+                "type": "COMPARE",
+                "name": "CMP1",
+                "x": 360.0,
+                "y": 160.0,
+                "icon": "——[CMP]——",
+                "preset": "17",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": ">",
+                "coords": [
+                  310.0,
+                  140.0,
+                  410.0,
+                  180.0
+                ],
+                "tag": "CMP1"
+              },
+              {
+                "id": 7,
+                "type": "COUNTER",
+                "name": "C0",
+                "x": 560.0,
+                "y": 160.0,
+                "icon": "——[CONT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "RESET",
+                "verify_preset": false,
+                "counter_mode": "existing",
+                "coords": [
+                  510.0,
+                  140.0,
+                  610.0,
+                  180.0
+                ],
+                "tag": "C0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 274.0,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 10,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 274.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  254.0,
+                  270.0,
+                  294.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 11,
+                "type": "COMPARE",
+                "name": "CMP0",
+                "x": 340.0,
+                "y": 274.0,
+                "icon": "——[CMP]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  254.0,
+                  390.0,
+                  294.0
+                ],
+                "tag": "CMP0"
+              },
+              {
+                "id": 14,
+                "type": "COIL",
+                "name": "Q0.0",
+                "x": 1209.0,
+                "y": 274.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  254.0,
+                  1259.0,
+                  294.0
+                ],
+                "tag": "Q0.0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 400,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 18,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 480,
+                "rung_y": 400,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  400,
+                  420.0,
+                  480
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 15,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 400.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  380.0,
+                  270.0,
+                  420.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 16,
+                "type": "COMPARE",
+                "name": "CMP3",
+                "x": 340.0,
+                "y": 400.0,
+                "icon": "——[CMP]——",
+                "preset": "1",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  380.0,
+                  390.0,
+                  420.0
+                ],
+                "tag": "CMP3"
+              },
+              {
+                "id": 17,
+                "type": "COIL",
+                "name": "Q0.1",
+                "x": 1209.0,
+                "y": 400.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  380.0,
+                  1259.0,
+                  420.0
+                ],
+                "tag": "Q0.1"
+              },
+              {
+                "id": 19,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 480.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 18,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  460.0,
+                  270.0,
+                  500.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 20,
+                "type": "COMPARE",
+                "name": "CMP4",
+                "x": 340.0,
+                "y": 480.0,
+                "icon": "——[CMP]——",
+                "preset": "17",
+                "comment": "",
+                "parent": 18,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  460.0,
+                  390.0,
+                  500.0
+                ],
+                "tag": "CMP4"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 4,
+          "y": 560,
+          "description": "Rung 4",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 24,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 640,
+                "rung_y": 560,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  560,
+                  420.0,
+                  640
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 21,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 560.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  540.0,
+                  270.0,
+                  580.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 22,
+                "type": "COMPARE",
+                "name": "CMP5",
+                "x": 340.0,
+                "y": 560.0,
+                "icon": "——[CMP]——",
+                "preset": "2",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  540.0,
+                  390.0,
+                  580.0
+                ],
+                "tag": "CMP5"
+              },
+              {
+                "id": 23,
+                "type": "COIL",
+                "name": "Q0.2",
+                "x": 1209.0,
+                "y": 560.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  540.0,
+                  1259.0,
+                  580.0
+                ],
+                "tag": "Q0.2"
+              },
+              {
+                "id": 25,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 640.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 24,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  620.0,
+                  270.0,
+                  660.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 26,
+                "type": "COMPARE",
+                "name": "CMP6",
+                "x": 340.0,
+                "y": 640.0,
+                "icon": "——[CMP]——",
+                "preset": "16",
+                "comment": "",
+                "parent": 24,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  620.0,
+                  390.0,
+                  660.0
+                ],
+                "tag": "CMP6"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 5,
+          "y": 720,
+          "description": "Rung 5",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 30,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 800,
+                "rung_y": 720,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  720,
+                  420.0,
+                  800
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 27,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 720.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  700.0,
+                  270.0,
+                  740.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 28,
+                "type": "COMPARE",
+                "name": "CMP7",
+                "x": 340.0,
+                "y": 720.0,
+                "icon": "——[CMP]——",
+                "preset": "3",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  700.0,
+                  390.0,
+                  740.0
+                ],
+                "tag": "CMP7"
+              },
+              {
+                "id": 29,
+                "type": "COIL",
+                "name": "Q0.3",
+                "x": 1209.0,
+                "y": 720.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  700.0,
+                  1259.0,
+                  740.0
+                ],
+                "tag": "Q0.3"
+              },
+              {
+                "id": 31,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 800.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 30,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  780.0,
+                  270.0,
+                  820.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 32,
+                "type": "COMPARE",
+                "name": "CMP8",
+                "x": 340.0,
+                "y": 800.0,
+                "icon": "——[CMP]——",
+                "preset": "15",
+                "comment": "",
+                "parent": 30,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  780.0,
+                  390.0,
+                  820.0
+                ],
+                "tag": "CMP8"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 6,
+          "y": 880,
+          "description": "Rung 6",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 36,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 960,
+                "rung_y": 880,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  880,
+                  420.0,
+                  960
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 33,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 880.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  860.0,
+                  270.0,
+                  900.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 34,
+                "type": "COMPARE",
+                "name": "CMP9",
+                "x": 340.0,
+                "y": 880.0,
+                "icon": "——[CMP]——",
+                "preset": "4",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  860.0,
+                  390.0,
+                  900.0
+                ],
+                "tag": "CMP9"
+              },
+              {
+                "id": 35,
+                "type": "COIL",
+                "name": "Q0.4",
+                "x": 1209.0,
+                "y": 880.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  860.0,
+                  1259.0,
+                  900.0
+                ],
+                "tag": "Q0.4"
+              },
+              {
+                "id": 37,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 960.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 36,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  940.0,
+                  270.0,
+                  980.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 38,
+                "type": "COMPARE",
+                "name": "CMP10",
+                "x": 340.0,
+                "y": 960.0,
+                "icon": "——[CMP]——",
+                "preset": "14",
+                "comment": "",
+                "parent": 36,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  940.0,
+                  390.0,
+                  980.0
+                ],
+                "tag": "CMP10"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 7,
+          "y": 1040,
+          "description": "Rung 7",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 42,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 1120,
+                "rung_y": 1040,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  1040,
+                  420.0,
+                  1120
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 39,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1040.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1020.0,
+                  270.0,
+                  1060.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 40,
+                "type": "COMPARE",
+                "name": "CMP11",
+                "x": 340.0,
+                "y": 1040.0,
+                "icon": "——[CMP]——",
+                "preset": "5",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1020.0,
+                  390.0,
+                  1060.0
+                ],
+                "tag": "CMP11"
+              },
+              {
+                "id": 41,
+                "type": "COIL",
+                "name": "Q0.5",
+                "x": 1209.0,
+                "y": 1040.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1020.0,
+                  1259.0,
+                  1060.0
+                ],
+                "tag": "Q0.5"
+              },
+              {
+                "id": 43,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1120.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 42,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1100.0,
+                  270.0,
+                  1140.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 44,
+                "type": "COMPARE",
+                "name": "CMP12",
+                "x": 340.0,
+                "y": 1120.0,
+                "icon": "——[CMP]——",
+                "preset": "13",
+                "comment": "",
+                "parent": 42,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1100.0,
+                  390.0,
+                  1140.0
+                ],
+                "tag": "CMP12"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 8,
+          "y": 1200,
+          "description": "Rung 8",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 48,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 1280,
+                "rung_y": 1200,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  1200,
+                  420.0,
+                  1280
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 45,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1200.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1180.0,
+                  270.0,
+                  1220.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 46,
+                "type": "COMPARE",
+                "name": "CMP13",
+                "x": 340.0,
+                "y": 1200.0,
+                "icon": "——[CMP]——",
+                "preset": "6",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1180.0,
+                  390.0,
+                  1220.0
+                ],
+                "tag": "CMP13"
+              },
+              {
+                "id": 47,
+                "type": "COIL",
+                "name": "Q0.6",
+                "x": 1209.0,
+                "y": 1200.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1180.0,
+                  1259.0,
+                  1220.0
+                ],
+                "tag": "Q0.6"
+              },
+              {
+                "id": 49,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1280.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 48,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1260.0,
+                  270.0,
+                  1300.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 50,
+                "type": "COMPARE",
+                "name": "CMP14",
+                "x": 340.0,
+                "y": 1280.0,
+                "icon": "——[CMP]——",
+                "preset": "12",
+                "comment": "",
+                "parent": 48,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1260.0,
+                  390.0,
+                  1300.0
+                ],
+                "tag": "CMP14"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 9,
+          "y": 1360,
+          "description": "Rung 9",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 54,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 1440,
+                "rung_y": 1360,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  1360,
+                  420.0,
+                  1440
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 51,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1360.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1340.0,
+                  270.0,
+                  1380.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 52,
+                "type": "COMPARE",
+                "name": "CMP15",
+                "x": 340.0,
+                "y": 1360.0,
+                "icon": "——[CMP]——",
+                "preset": "7",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1340.0,
+                  390.0,
+                  1380.0
+                ],
+                "tag": "CMP15"
+              },
+              {
+                "id": 53,
+                "type": "COIL",
+                "name": "Q0.7",
+                "x": 1209.0,
+                "y": 1360.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1340.0,
+                  1259.0,
+                  1380.0
+                ],
+                "tag": "Q0.7"
+              },
+              {
+                "id": 55,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1440.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 54,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1420.0,
+                  270.0,
+                  1460.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 56,
+                "type": "COMPARE",
+                "name": "CMP16",
+                "x": 340.0,
+                "y": 1440.0,
+                "icon": "——[CMP]——",
+                "preset": "11",
+                "comment": "",
+                "parent": 54,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1420.0,
+                  390.0,
+                  1460.0
+                ],
+                "tag": "CMP16"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 10,
+          "y": 1520,
+          "description": "Rung 10",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 60,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [],
+                "branch_y": 1600,
+                "rung_y": 1520,
+                "parent": null,
+                "width": 292.0,
+                "x": 128.0,
+                "coords": [
+                  128.0,
+                  1520,
+                  420.0,
+                  1600
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 57,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1520.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1500.0,
+                  270.0,
+                  1540.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 58,
+                "type": "COMPARE",
+                "name": "CMP17",
+                "x": 340.0,
+                "y": 1520.0,
+                "icon": "——[CMP]——",
+                "preset": "8",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1500.0,
+                  390.0,
+                  1540.0
+                ],
+                "tag": "CMP17"
+              },
+              {
+                "id": 59,
+                "type": "COIL",
+                "name": "Q0.8",
+                "x": 1209.0,
+                "y": 1520.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1500.0,
+                  1259.0,
+                  1540.0
+                ],
+                "tag": "Q0.8"
+              },
+              {
+                "id": 61,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1600.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": 60,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1580.0,
+                  270.0,
+                  1620.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 62,
+                "type": "COMPARE",
+                "name": "CMP18",
+                "x": 340.0,
+                "y": 1600.0,
+                "icon": "——[CMP]——",
+                "preset": "10",
+                "comment": "",
+                "parent": 60,
+                "element_mode": "new",
+                "source_a": "",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1580.0,
+                  390.0,
+                  1620.0
+                ],
+                "tag": "CMP18"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 11,
+          "y": 1680,
+          "description": "Rung 11",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 63,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 220.0,
+                "y": 1680.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1660.0,
+                  270.0,
+                  1700.0
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 64,
+                "type": "COMPARE",
+                "name": "CMP19",
+                "x": 340.0,
+                "y": 1680.0,
+                "icon": "——[CMP]——",
+                "preset": "9",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR0",
+                "operator": "==",
+                "coords": [
+                  290.0,
+                  1660.0,
+                  390.0,
+                  1700.0
+                ],
+                "tag": "CMP19"
+              },
+              {
+                "id": 65,
+                "type": "COIL",
+                "name": "Q0.9",
+                "x": 1209.0,
+                "y": 1680.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1660.0,
+                  1259.0,
+                  1700.0
+                ],
+                "tag": "Q0.9"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 12,
+          "y": 1760,
+          "description": "Rung 12",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 66,
+                "type": "CONTACT",
+                "name": "T1",
+                "x": 220.0,
+                "y": 1760.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "component_nf",
+                "contact_behavior": "toggle",
+                "component_ref": "Timer TON: T1",
+                "coords": [
+                  170.0,
+                  1740.0,
+                  270.0,
+                  1780.0
+                ],
+                "tag": "T1"
+              },
+              {
+                "id": 67,
+                "type": "TIMER",
+                "name": "T1",
+                "x": 340.0,
+                "y": 1760.0,
+                "icon": "——[TIM]——",
+                "preset": "100",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "timer_type": "TON",
+                "coords": [
+                  290.0,
+                  1740.0,
+                  390.0,
+                  1780.0
+                ],
+                "tag": "T1"
+              },
+              {
+                "id": 68,
+                "type": "COUNTER",
+                "name": "C2",
+                "x": 480.0,
+                "y": 1760.0,
+                "icon": "——[CONT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "UP",
+                "verify_preset": false,
+                "coords": [
+                  430.0,
+                  1740.0,
+                  530.0,
+                  1780.0
+                ],
+                "tag": "C2"
+              },
+              {
+                "id": 69,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 620.0,
+                "y": 1760.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  570.0,
+                  1740.0,
+                  670.0,
+                  1780.0
+                ],
+                "tag": "VAR1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 13,
+          "y": 1840,
+          "description": "Rung 13",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 70,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 1840.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1820.0,
+                  270.0,
+                  1860.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 71,
+                "type": "COMPARE",
+                "name": "CMP2",
+                "x": 340.0,
+                "y": 1840.0,
+                "icon": "——[CMP]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  1820.0,
+                  390.0,
+                  1860.0
+                ],
+                "tag": "CMP2"
+              },
+              {
+                "id": 72,
+                "type": "COUNTER",
+                "name": "C2",
+                "x": 480.0,
+                "y": 1840.0,
+                "icon": "——[CONT]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "RESET",
+                "verify_preset": false,
+                "coords": [
+                  430.0,
+                  1820.0,
+                  530.0,
+                  1860.0
+                ],
+                "tag": "C2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 14,
+          "y": 1920,
+          "description": "Rung 14",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 73,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 1920.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1900.0,
+                  270.0,
+                  1940.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 74,
+                "type": "COMPARE",
+                "name": "CMP20",
+                "x": 340.0,
+                "y": 1920.0,
+                "icon": "——[CMP]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  1900.0,
+                  390.0,
+                  1940.0
+                ],
+                "tag": "CMP20"
+              },
+              {
+                "id": 75,
+                "type": "COIL",
+                "name": "Q0.10",
+                "x": 1209.0,
+                "y": 1920.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1900.0,
+                  1259.0,
+                  1940.0
+                ],
+                "tag": "Q0.10"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 15,
+          "y": 2000,
+          "description": "Rung 15",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 76,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2000.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  1980.0,
+                  270.0,
+                  2020.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 77,
+                "type": "COMPARE",
+                "name": "CMP21",
+                "x": 340.0,
+                "y": 2000.0,
+                "icon": "——[CMP]——",
+                "preset": "1",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  1980.0,
+                  390.0,
+                  2020.0
+                ],
+                "tag": "CMP21"
+              },
+              {
+                "id": 78,
+                "type": "COIL",
+                "name": "Q0.11",
+                "x": 1209.0,
+                "y": 2000.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  1980.0,
+                  1259.0,
+                  2020.0
+                ],
+                "tag": "Q0.11"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 16,
+          "y": 2080,
+          "description": "Rung 16",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 79,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2080.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2060.0,
+                  270.0,
+                  2100.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 80,
+                "type": "COMPARE",
+                "name": "CMP22",
+                "x": 340.0,
+                "y": 2080.0,
+                "icon": "——[CMP]——",
+                "preset": "2",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2060.0,
+                  390.0,
+                  2100.0
+                ],
+                "tag": "CMP22"
+              },
+              {
+                "id": 81,
+                "type": "COIL",
+                "name": "Q0.12",
+                "x": 1209.0,
+                "y": 2080.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2060.0,
+                  1259.0,
+                  2100.0
+                ],
+                "tag": "Q0.12"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 17,
+          "y": 2160,
+          "description": "Rung 17",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 82,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2160.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2140.0,
+                  270.0,
+                  2180.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 83,
+                "type": "COMPARE",
+                "name": "CMP23",
+                "x": 340.0,
+                "y": 2160.0,
+                "icon": "——[CMP]——",
+                "preset": "3",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2140.0,
+                  390.0,
+                  2180.0
+                ],
+                "tag": "CMP23"
+              },
+              {
+                "id": 84,
+                "type": "COIL",
+                "name": "Q0.13",
+                "x": 1209.0,
+                "y": 2160.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2140.0,
+                  1259.0,
+                  2180.0
+                ],
+                "tag": "Q0.13"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 18,
+          "y": 2240,
+          "description": "Rung 18",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 85,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2240.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2220.0,
+                  270.0,
+                  2260.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 86,
+                "type": "COMPARE",
+                "name": "CMP24",
+                "x": 340.0,
+                "y": 2240.0,
+                "icon": "——[CMP]——",
+                "preset": "4",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2220.0,
+                  390.0,
+                  2260.0
+                ],
+                "tag": "CMP24"
+              },
+              {
+                "id": 87,
+                "type": "COIL",
+                "name": "Q0.14",
+                "x": 1209.0,
+                "y": 2240.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2220.0,
+                  1259.0,
+                  2260.0
+                ],
+                "tag": "Q0.14"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 19,
+          "y": 2320,
+          "description": "Rung 19",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 88,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2320.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2300.0,
+                  270.0,
+                  2340.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 89,
+                "type": "COMPARE",
+                "name": "CMP25",
+                "x": 340.0,
+                "y": 2320.0,
+                "icon": "——[CMP]——",
+                "preset": "5",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2300.0,
+                  390.0,
+                  2340.0
+                ],
+                "tag": "CMP25"
+              },
+              {
+                "id": 90,
+                "type": "COIL",
+                "name": "Q0.15",
+                "x": 1209.0,
+                "y": 2320.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2300.0,
+                  1259.0,
+                  2340.0
+                ],
+                "tag": "Q0.15"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 20,
+          "y": 2400,
+          "description": "Rung 20",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 91,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2400.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2380.0,
+                  270.0,
+                  2420.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 92,
+                "type": "COMPARE",
+                "name": "CMP26",
+                "x": 340.0,
+                "y": 2400.0,
+                "icon": "——[CMP]——",
+                "preset": "6",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2380.0,
+                  390.0,
+                  2420.0
+                ],
+                "tag": "CMP26"
+              },
+              {
+                "id": 93,
+                "type": "COIL",
+                "name": "Q0.16",
+                "x": 1209.0,
+                "y": 2400.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2380.0,
+                  1259.0,
+                  2420.0
+                ],
+                "tag": "Q0.16"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 21,
+          "y": 2480,
+          "description": "Rung 21",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 94,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2480.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2460.0,
+                  270.0,
+                  2500.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 95,
+                "type": "COMPARE",
+                "name": "CMP27",
+                "x": 340.0,
+                "y": 2480.0,
+                "icon": "——[CMP]——",
+                "preset": "7",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2460.0,
+                  390.0,
+                  2500.0
+                ],
+                "tag": "CMP27"
+              },
+              {
+                "id": 96,
+                "type": "COIL",
+                "name": "Q0.17",
+                "x": 1209.0,
+                "y": 2480.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2460.0,
+                  1259.0,
+                  2500.0
+                ],
+                "tag": "Q0.17"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 22,
+          "y": 2560,
+          "description": "Rung 22",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 97,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2560.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2540.0,
+                  270.0,
+                  2580.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 98,
+                "type": "COMPARE",
+                "name": "CMP28",
+                "x": 340.0,
+                "y": 2560.0,
+                "icon": "——[CMP]——",
+                "preset": "8",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2540.0,
+                  390.0,
+                  2580.0
+                ],
+                "tag": "CMP28"
+              },
+              {
+                "id": 99,
+                "type": "COIL",
+                "name": "Q0.18",
+                "x": 1209.0,
+                "y": 2560.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2540.0,
+                  1259.0,
+                  2580.0
+                ],
+                "tag": "Q0.18"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 23,
+          "y": 2640,
+          "description": "Rung 23",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 100,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 220.0,
+                "y": 2640.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2620.0,
+                  270.0,
+                  2660.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 101,
+                "type": "COMPARE",
+                "name": "CMP29",
+                "x": 340.0,
+                "y": 2640.0,
+                "icon": "——[CMP]——",
+                "preset": "9",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR1",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2620.0,
+                  390.0,
+                  2660.0
+                ],
+                "tag": "CMP29"
+              },
+              {
+                "id": 102,
+                "type": "COIL",
+                "name": "Q0.19",
+                "x": 1209.0,
+                "y": 2640.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2620.0,
+                  1259.0,
+                  2660.0
+                ],
+                "tag": "Q0.19"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 24,
+          "y": 2720,
+          "description": "Rung 24",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 103,
+                "type": "CONTACT",
+                "name": "T2",
+                "x": 220.0,
+                "y": 2720.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "component_nf",
+                "contact_behavior": "toggle",
+                "component_ref": "Timer TON: T2",
+                "coords": [
+                  170.0,
+                  2700.0,
+                  270.0,
+                  2740.0
+                ],
+                "tag": "T2"
+              },
+              {
+                "id": 104,
+                "type": "TIMER",
+                "name": "T2",
+                "x": 340.0,
+                "y": 2720.0,
+                "icon": "——[TIM]——",
+                "preset": "1000",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "timer_type": "TON",
+                "coords": [
+                  290.0,
+                  2700.0,
+                  390.0,
+                  2740.0
+                ],
+                "tag": "T2"
+              },
+              {
+                "id": 105,
+                "type": "COUNTER",
+                "name": "C3",
+                "x": 480.0,
+                "y": 2720.0,
+                "icon": "——[CONT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "UP",
+                "verify_preset": false,
+                "coords": [
+                  430.0,
+                  2700.0,
+                  530.0,
+                  2740.0
+                ],
+                "tag": "C3"
+              },
+              {
+                "id": 106,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 620.0,
+                "y": 2720.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  570.0,
+                  2700.0,
+                  670.0,
+                  2740.0
+                ],
+                "tag": "VAR2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 25,
+          "y": 2800,
+          "description": "Rung 25",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 107,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 2800.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2780.0,
+                  270.0,
+                  2820.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 108,
+                "type": "COMPARE",
+                "name": "CMP30",
+                "x": 340.0,
+                "y": 2800.0,
+                "icon": "——[CMP]——",
+                "preset": "5",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2780.0,
+                  390.0,
+                  2820.0
+                ],
+                "tag": "CMP30"
+              },
+              {
+                "id": 109,
+                "type": "COUNTER",
+                "name": "C3",
+                "x": 480.0,
+                "y": 2800.0,
+                "icon": "——[CONT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "counter_type": "RESET",
+                "verify_preset": false,
+                "coords": [
+                  430.0,
+                  2780.0,
+                  530.0,
+                  2820.0
+                ],
+                "tag": "C3"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 26,
+          "y": 2881.0,
+          "description": "Rung 26",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 110,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 2881.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2861.0,
+                  270.0,
+                  2901.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 111,
+                "type": "COMPARE",
+                "name": "CMP31",
+                "x": 340.0,
+                "y": 2881.0,
+                "icon": "——[CMP]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2861.0,
+                  390.0,
+                  2901.0
+                ],
+                "tag": "CMP31"
+              },
+              {
+                "id": 113,
+                "type": "COIL",
+                "name": "Q0.20",
+                "x": 1209.0,
+                "y": 2881.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2861.0,
+                  1259.0,
+                  2901.0
+                ],
+                "tag": "Q0.20"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 27,
+          "y": 2961.0,
+          "description": "Rung 27",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 114,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 2961.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  2941.0,
+                  270.0,
+                  2981.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 115,
+                "type": "COMPARE",
+                "name": "CMP32",
+                "x": 340.0,
+                "y": 2961.0,
+                "icon": "——[CMP]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  2941.0,
+                  390.0,
+                  2981.0
+                ],
+                "tag": "CMP32"
+              },
+              {
+                "id": 116,
+                "type": "COIL",
+                "name": "Q0.29",
+                "x": 1209.0,
+                "y": 2961.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  2941.0,
+                  1259.0,
+                  2981.0
+                ],
+                "tag": "Q0.29"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 28,
+          "y": 3041.0,
+          "description": "Rung 28",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 117,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3041.0,
+                "icon": "——[VAR]——",
+                "preset": "",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3021.0,
+                  270.0,
+                  3061.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 118,
+                "type": "COMPARE",
+                "name": "CMP33",
+                "x": 340.0,
+                "y": 3041.0,
+                "icon": "——[CMP]——",
+                "preset": "1",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3021.0,
+                  390.0,
+                  3061.0
+                ],
+                "tag": "CMP33"
+              },
+              {
+                "id": 119,
+                "type": "COIL",
+                "name": "Q0.21",
+                "x": 1209.0,
+                "y": 3041.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3021.0,
+                  1259.0,
+                  3061.0
+                ],
+                "tag": "Q0.21"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 29,
+          "y": 3121.0,
+          "description": "Rung 29",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 120,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3121.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3101.0,
+                  270.0,
+                  3141.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 121,
+                "type": "COMPARE",
+                "name": "CMP34",
+                "x": 340.0,
+                "y": 3121.0,
+                "icon": "——[CMP]——",
+                "preset": "1",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3101.0,
+                  390.0,
+                  3141.0
+                ],
+                "tag": "CMP34"
+              },
+              {
+                "id": 122,
+                "type": "COIL",
+                "name": "Q0.28",
+                "x": 1209.0,
+                "y": 3121.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3101.0,
+                  1259.0,
+                  3141.0
+                ],
+                "tag": "Q0.28"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 30,
+          "y": 3201.0,
+          "description": "Rung 30",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 123,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3201.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3181.0,
+                  270.0,
+                  3221.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 124,
+                "type": "COMPARE",
+                "name": "CMP35",
+                "x": 340.0,
+                "y": 3201.0,
+                "icon": "——[CMP]——",
+                "preset": "2",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3181.0,
+                  390.0,
+                  3221.0
+                ],
+                "tag": "CMP35"
+              },
+              {
+                "id": 125,
+                "type": "COIL",
+                "name": "Q0.22",
+                "x": 1209.0,
+                "y": 3201.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3181.0,
+                  1259.0,
+                  3221.0
+                ],
+                "tag": "Q0.22"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 31,
+          "y": 3281.0,
+          "description": "Rung 31",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 126,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3281.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3261.0,
+                  270.0,
+                  3301.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 127,
+                "type": "COMPARE",
+                "name": "CMP36",
+                "x": 340.0,
+                "y": 3281.0,
+                "icon": "——[CMP]——",
+                "preset": "2",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3261.0,
+                  390.0,
+                  3301.0
+                ],
+                "tag": "CMP36"
+              },
+              {
+                "id": 128,
+                "type": "COIL",
+                "name": "Q0.27",
+                "x": 1209.0,
+                "y": 3281.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3261.0,
+                  1259.0,
+                  3301.0
+                ],
+                "tag": "Q0.27"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 32,
+          "y": 3361.0,
+          "description": "Rung 32",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 129,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3361.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3341.0,
+                  270.0,
+                  3381.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 130,
+                "type": "COMPARE",
+                "name": "CMP37",
+                "x": 340.0,
+                "y": 3361.0,
+                "icon": "——[CMP]——",
+                "preset": "3",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3341.0,
+                  390.0,
+                  3381.0
+                ],
+                "tag": "CMP37"
+              },
+              {
+                "id": 131,
+                "type": "COIL",
+                "name": "Q0.23",
+                "x": 1209.0,
+                "y": 3361.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3341.0,
+                  1259.0,
+                  3381.0
+                ],
+                "tag": "Q0.23"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 33,
+          "y": 3441.0,
+          "description": "Rung 33",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 132,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3441.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3421.0,
+                  270.0,
+                  3461.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 133,
+                "type": "COMPARE",
+                "name": "CMP38",
+                "x": 340.0,
+                "y": 3441.0,
+                "icon": "——[CMP]——",
+                "preset": "3",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3421.0,
+                  390.0,
+                  3461.0
+                ],
+                "tag": "CMP38"
+              },
+              {
+                "id": 134,
+                "type": "COIL",
+                "name": "Q0.26",
+                "x": 1209.0,
+                "y": 3441.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3421.0,
+                  1259.0,
+                  3461.0
+                ],
+                "tag": "Q0.26"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 34,
+          "y": 3521.0,
+          "description": "Rung 34",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 135,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3521.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3501.0,
+                  270.0,
+                  3541.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 136,
+                "type": "COMPARE",
+                "name": "CMP39",
+                "x": 340.0,
+                "y": 3521.0,
+                "icon": "——[CMP]——",
+                "preset": "4",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3501.0,
+                  390.0,
+                  3541.0
+                ],
+                "tag": "CMP39"
+              },
+              {
+                "id": 137,
+                "type": "COIL",
+                "name": "Q0.24",
+                "x": 1209.0,
+                "y": 3521.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3501.0,
+                  1259.0,
+                  3541.0
+                ],
+                "tag": "Q0.24"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 35,
+          "y": 3601.0,
+          "description": "Rung 35",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 138,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 220.0,
+                "y": 3601.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  170.0,
+                  3581.0,
+                  270.0,
+                  3621.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 139,
+                "type": "COMPARE",
+                "name": "CMP40",
+                "x": 340.0,
+                "y": 3601.0,
+                "icon": "——[CMP]——",
+                "preset": "4",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "source_a": "VAR2",
+                "operator": ">",
+                "coords": [
+                  290.0,
+                  3581.0,
+                  390.0,
+                  3621.0
+                ],
+                "tag": "CMP40"
+              },
+              {
+                "id": 140,
+                "type": "COIL",
+                "name": "Q0.25",
+                "x": 1209.0,
+                "y": 3601.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  3581.0,
+                  1259.0,
+                  3621.0
+                ],
+                "tag": "Q0.25"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "peripherals": {
+    "max": {
+      "CAN1_enabled": false,
+      "CAN1_baudrate": "250",
+      "CAN2_enabled": false,
+      "CAN2_baudrate": "250",
+      "PWM_enabled": false,
+      "PWM_frequency": "100"
+    }
+  }
+}

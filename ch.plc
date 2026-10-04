@@ -1,0 +1,681 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "02/03/2026 17:04",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "CONTACT",
+                "name": "I0.28",
+                "x": 200.0,
+                "y": 80.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  60.0,
+                  250.0,
+                  100.0
+                ],
+                "tag": "I0.28"
+              },
+              {
+                "id": 1,
+                "type": "COIL",
+                "name": "Q0.0",
+                "x": 1209.0,
+                "y": 80.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  60.0,
+                  1259.0,
+                  100.0
+                ],
+                "tag": "Q0.0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 2,
+                "type": "CONTACT",
+                "name": "I0.27",
+                "x": 200.0,
+                "y": 160.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  140.0,
+                  250.0,
+                  180.0
+                ],
+                "tag": "I0.27"
+              },
+              {
+                "id": 3,
+                "type": "COIL",
+                "name": "Q0.1",
+                "x": 1209.0,
+                "y": 160.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  140.0,
+                  1259.0,
+                  180.0
+                ],
+                "tag": "Q0.1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 240,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 4,
+                "type": "CONTACT",
+                "name": "I0.20",
+                "x": 200.0,
+                "y": 240.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  220.0,
+                  250.0,
+                  260.0
+                ],
+                "tag": "I0.20"
+              },
+              {
+                "id": 5,
+                "type": "COIL",
+                "name": "Q0.10",
+                "x": 1209.0,
+                "y": 240.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  220.0,
+                  1259.0,
+                  260.0
+                ],
+                "tag": "Q0.10"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 320,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 6,
+                "type": "CONTACT",
+                "name": "I0.21",
+                "x": 200.0,
+                "y": 320.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  300.0,
+                  250.0,
+                  340.0
+                ],
+                "tag": "I0.21"
+              },
+              {
+                "id": 7,
+                "type": "COIL",
+                "name": "Q0.11",
+                "x": 1209.0,
+                "y": 320.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  300.0,
+                  1259.0,
+                  340.0
+                ],
+                "tag": "Q0.11"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 4,
+          "y": 400,
+          "description": "Rung 4",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 8,
+                "type": "CONTACT",
+                "name": "I0.9",
+                "x": 200.0,
+                "y": 400.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  380.0,
+                  250.0,
+                  420.0
+                ],
+                "tag": "I0.9"
+              },
+              {
+                "id": 9,
+                "type": "COIL",
+                "name": "Q0.20",
+                "x": 1209.0,
+                "y": 400.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  380.0,
+                  1259.0,
+                  420.0
+                ],
+                "tag": "Q0.20"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 5,
+          "y": 480,
+          "description": "Rung 5",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 10,
+                "type": "CONTACT",
+                "name": "I0.0",
+                "x": 200.0,
+                "y": 480.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  460.0,
+                  250.0,
+                  500.0
+                ],
+                "tag": "I0.0"
+              },
+              {
+                "id": 11,
+                "type": "COIL",
+                "name": "Q0.21",
+                "x": 1209.0,
+                "y": 480.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  460.0,
+                  1259.0,
+                  500.0
+                ],
+                "tag": "Q0.21"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 6,
+          "y": 560,
+          "description": "Rung 6",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 12,
+                "type": "CONTACT",
+                "name": "I0.23",
+                "x": 200.0,
+                "y": 560.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  540.0,
+                  250.0,
+                  580.0
+                ],
+                "tag": "I0.23"
+              },
+              {
+                "id": 13,
+                "type": "COIL",
+                "name": "Q0.28",
+                "x": 1209.0,
+                "y": 560.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  540.0,
+                  1259.0,
+                  580.0
+                ],
+                "tag": "Q0.28"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 7,
+          "y": 662.0,
+          "description": "Rung 7",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 16,
+                "type": "CONTACT",
+                "name": "I0.11",
+                "x": 200.0,
+                "y": 662.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  642.0,
+                  250.0,
+                  682.0
+                ],
+                "tag": "I0.11"
+              },
+              {
+                "id": 17,
+                "type": "COIL",
+                "name": "Q0.18",
+                "x": 1209.0,
+                "y": 662.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  642.0,
+                  1259.0,
+                  682.0
+                ],
+                "tag": "Q0.18"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 8,
+          "y": 756.0,
+          "description": "Rung 8",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 18,
+                "type": "CONTACT",
+                "name": "I0.12",
+                "x": 200.0,
+                "y": 756.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  736.0,
+                  250.0,
+                  776.0
+                ],
+                "tag": "I0.12"
+              },
+              {
+                "id": 19,
+                "type": "COIL",
+                "name": "Q0.19",
+                "x": 1209.0,
+                "y": 756.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  736.0,
+                  1259.0,
+                  776.0
+                ],
+                "tag": "Q0.19"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 9,
+          "y": 855.0,
+          "description": "Rung 9",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 20,
+                "type": "CONTACT",
+                "name": "I0.19",
+                "x": 200.0,
+                "y": 855.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  835.0,
+                  250.0,
+                  875.0
+                ],
+                "tag": "I0.19"
+              },
+              {
+                "id": 21,
+                "type": "COIL",
+                "name": "Q0.8",
+                "x": 1209.0,
+                "y": 855.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  835.0,
+                  1259.0,
+                  875.0
+                ],
+                "tag": "Q0.8"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 10,
+          "y": 960,
+          "description": "Rung 10",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 22,
+                "type": "CONTACT",
+                "name": "I0.10",
+                "x": 200.0,
+                "y": 960.0,
+                "icon": "——| |——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "component_ref": "",
+                "coords": [
+                  150.0,
+                  940.0,
+                  250.0,
+                  980.0
+                ],
+                "tag": "I0.10"
+              },
+              {
+                "id": 23,
+                "type": "COIL",
+                "name": "Q0.9",
+                "x": 1209.0,
+                "y": 960.0,
+                "icon": "——( )——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "coil_type": "NORMAL",
+                "pwm_polarity": "Positivo",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "formula": "",
+                "auto_formula": "",
+                "custom_formula": "",
+                "coords": [
+                  1159.0,
+                  940.0,
+                  1259.0,
+                  980.0
+                ],
+                "tag": "Q0.9"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "peripherals": {
+    "max": {
+      "CAN1_enabled": false,
+      "CAN1_baudrate": "250",
+      "CAN2_enabled": false,
+      "CAN2_baudrate": "250",
+      "PWM_enabled": false,
+      "PWM_frequency": "100"
+    }
+  }
+}

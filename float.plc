@@ -1,0 +1,157 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "28/05/2026 12:00",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "POTENTIOMETER",
+                "name": "POT0",
+                "x": 240.0,
+                "y": 80.0,
+                "icon": "——[POT]——",
+                "preset": "10",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "analog_pin": "I0.8",
+                "min_value": "0",
+                "max_value": "100",
+                "coords": [
+                  190.0,
+                  60.0,
+                  290.0,
+                  100.0
+                ],
+                "tag": "POT0"
+              },
+              {
+                "id": 1,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 420.0,
+                "y": 80.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  370.0,
+                  60.0,
+                  470.0,
+                  100.0
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 2,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 580.0,
+                "y": 160.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "FLOAT",
+                "array_size": 0,
+                "initial_value": "0",
+                "float_decimals": 3,
+                "coords": [
+                  530.0,
+                  140.0,
+                  630.0,
+                  180.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 3,
+                "type": "MATH",
+                "name": "MATH0",
+                "x": 420.0,
+                "y": 160.0,
+                "icon": "——[MTH]——",
+                "preset": "3.3",
+                "comment": "",
+                "parent": null,
+                "element_mode": "new",
+                "operation": "DIV",
+                "source_a": "",
+                "math_custom_formula": "",
+                "math_auto_formula": "",
+                "coords": [
+                  370.0,
+                  140.0,
+                  470.0,
+                  180.0
+                ],
+                "tag": "MATH0"
+              },
+              {
+                "id": 4,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 240.0,
+                "y": 160.0,
+                "icon": "——[VAR]——",
+                "preset": "0",
+                "comment": "",
+                "parent": null,
+                "element_mode": "existing",
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "coords": [
+                  190.0,
+                  140.0,
+                  290.0,
+                  180.0
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "peripherals": {
+    "max": {
+      "CAN1_enabled": false,
+      "CAN1_baudrate": "250",
+      "CAN2_enabled": false,
+      "CAN2_baudrate": "250",
+      "PWM_enabled": false,
+      "PWM_frequency": "100"
+    }
+  }
+}
