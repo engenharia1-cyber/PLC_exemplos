@@ -1,0 +1,710 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "05/10/2026 16:44",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "RTC",
+                "name": "RTC0",
+                "x": 160,
+                "y": 80,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "segundos",
+                "coords": [
+                  110,
+                  60,
+                  210,
+                  100
+                ],
+                "tag": "RTC0"
+              },
+              {
+                "id": 1,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 380,
+                "y": 80,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  330,
+                  60,
+                  430,
+                  100
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 2,
+                "type": "RTC",
+                "name": "RTC1",
+                "x": 160,
+                "y": 160,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "minutos",
+                "coords": [
+                  110,
+                  140,
+                  210,
+                  180
+                ],
+                "tag": "RTC1"
+              },
+              {
+                "id": 3,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 380,
+                "y": 160,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  140,
+                  430,
+                  180
+                ],
+                "tag": "VAR1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 240,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 4,
+                "type": "RTC",
+                "name": "RTC2",
+                "x": 160,
+                "y": 240,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "horas",
+                "coords": [
+                  110,
+                  220,
+                  210,
+                  260
+                ],
+                "tag": "RTC2"
+              },
+              {
+                "id": 5,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 380,
+                "y": 240,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  220,
+                  430,
+                  260
+                ],
+                "tag": "VAR2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 320,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 6,
+                "type": "RTC",
+                "name": "RTC3",
+                "x": 160,
+                "y": 320,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "dia",
+                "coords": [
+                  110,
+                  300,
+                  210,
+                  340
+                ],
+                "tag": "RTC3"
+              },
+              {
+                "id": 7,
+                "type": "VARIABLE",
+                "name": "VAR3",
+                "x": 380,
+                "y": 320,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  300,
+                  430,
+                  340
+                ],
+                "tag": "VAR3"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 4,
+          "y": 400,
+          "description": "Rung 4",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 8,
+                "type": "RTC",
+                "name": "RTC4",
+                "x": 160,
+                "y": 400,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "mes",
+                "coords": [
+                  110,
+                  380,
+                  210,
+                  420
+                ],
+                "tag": "RTC4"
+              },
+              {
+                "id": 9,
+                "type": "VARIABLE",
+                "name": "VAR4",
+                "x": 380,
+                "y": 400,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  380,
+                  430,
+                  420
+                ],
+                "tag": "VAR4"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 5,
+          "y": 480,
+          "description": "Rung 5",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 10,
+                "type": "RTC",
+                "name": "RTC5",
+                "x": 160,
+                "y": 480,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "ano",
+                "coords": [
+                  110,
+                  460,
+                  210,
+                  500
+                ],
+                "tag": "RTC5"
+              },
+              {
+                "id": 11,
+                "type": "VARIABLE",
+                "name": "VAR5",
+                "x": 380,
+                "y": 480,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  460,
+                  430,
+                  500
+                ],
+                "tag": "VAR5"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 6,
+          "y": 560,
+          "description": "Rung 6",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 12,
+                "type": "CAN",
+                "name": "CAN0",
+                "x": 160,
+                "y": 560,
+                "icon": "——[CAN]——",
+                "comment": "",
+                "parent": null,
+                "can_bus": "CAN1",
+                "can_mode": "SEND",
+                "can_time": "1000",
+                "can_address": "0x00112233",
+                "can_dlc": "8",
+                "can_rx_byte": "Byte 0",
+                "can_rx_size": "1",
+                "can_data_0": "VAR0",
+                "can_data_1": "VAR1",
+                "can_data_2": "VAR2",
+                "can_data_3": "VAR3",
+                "can_data_4": "VAR4",
+                "can_data_5": "VAR5",
+                "can_data_6": "",
+                "can_data_7": "",
+                "coords": [
+                  110,
+                  540,
+                  210,
+                  580
+                ],
+                "tag": "CAN0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 7,
+          "y": 640,
+          "description": "Rung 7",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 13,
+                "type": "CAN",
+                "name": "CAN1",
+                "x": 160,
+                "y": 640,
+                "icon": "——[CAN]——",
+                "comment": "",
+                "parent": null,
+                "can_bus": "CAN1",
+                "can_mode": "RECEIVE",
+                "can_time": "100",
+                "can_address": "0x00112233",
+                "can_dlc": "8",
+                "can_rx_byte": "Byte 0",
+                "can_rx_size": "1",
+                "can_data_0": "1",
+                "can_data_1": "2",
+                "can_data_2": "3",
+                "can_data_3": "4",
+                "can_data_4": "0",
+                "can_data_5": "0",
+                "can_data_6": "0",
+                "can_data_7": "0",
+                "value": 1,
+                "coords": [
+                  110,
+                  620,
+                  210,
+                  660
+                ],
+                "tag": "CAN1"
+              },
+              {
+                "id": 14,
+                "type": "VARIABLE",
+                "name": "VAR6",
+                "x": 380,
+                "y": 640,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  330,
+                  620,
+                  430,
+                  660
+                ],
+                "tag": "VAR6"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 8,
+          "y": 720,
+          "description": "Rung 8",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 15,
+                "type": "CAN",
+                "name": "CAN2",
+                "x": 160,
+                "y": 720,
+                "icon": "——[CAN]——",
+                "comment": "",
+                "parent": null,
+                "can_bus": "CAN1",
+                "can_mode": "RECEIVE",
+                "can_time": "100",
+                "can_address": "0x00112233",
+                "can_dlc": "8",
+                "can_rx_byte": "Byte 0",
+                "can_rx_size": "1",
+                "can_data_0": "1",
+                "can_data_1": "2",
+                "can_data_2": "3",
+                "can_data_3": "4",
+                "can_data_4": "0",
+                "can_data_5": "0",
+                "can_data_6": "0",
+                "can_data_7": "0",
+                "can_rx_indices": "1",
+                "value": 2,
+                "coords": [
+                  110,
+                  700,
+                  210,
+                  740
+                ],
+                "tag": "CAN2"
+              },
+              {
+                "id": 16,
+                "type": "VARIABLE",
+                "name": "VAR7",
+                "x": 380,
+                "y": 720,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  700,
+                  430,
+                  740
+                ],
+                "tag": "VAR7"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 9,
+          "y": 800,
+          "description": "Rung 9",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 17,
+                "type": "CAN",
+                "name": "CAN3",
+                "x": 160,
+                "y": 800,
+                "icon": "——[CAN]——",
+                "comment": "",
+                "parent": null,
+                "can_bus": "CAN1",
+                "can_mode": "RECEIVE",
+                "can_time": "100",
+                "can_address": "0x00112233",
+                "can_dlc": "8",
+                "can_rx_byte": "Byte 0",
+                "can_rx_size": "1",
+                "can_data_0": "1",
+                "can_data_1": "2",
+                "can_data_2": "3",
+                "can_data_3": "4",
+                "can_data_4": "0",
+                "can_data_5": "0",
+                "can_data_6": "0",
+                "can_data_7": "0",
+                "can_rx_indices": "2",
+                "value": 3,
+                "coords": [
+                  110,
+                  780,
+                  210,
+                  820
+                ],
+                "tag": "CAN3"
+              },
+              {
+                "id": 18,
+                "type": "VARIABLE",
+                "name": "VAR8",
+                "x": 380,
+                "y": 800,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  780,
+                  430,
+                  820
+                ],
+                "tag": "VAR8"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 10,
+          "y": 880,
+          "description": "Rung 10",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 19,
+                "type": "CAN",
+                "name": "CAN4",
+                "x": 160,
+                "y": 880,
+                "icon": "——[CAN]——",
+                "comment": "",
+                "parent": null,
+                "can_bus": "CAN1",
+                "can_mode": "RECEIVE",
+                "can_time": "100",
+                "can_address": "0x00112233",
+                "can_dlc": "8",
+                "can_rx_byte": "Byte 0",
+                "can_rx_size": "1",
+                "can_data_0": "1",
+                "can_data_1": "2",
+                "can_data_2": "3",
+                "can_data_3": "4",
+                "can_data_4": "0",
+                "can_data_5": "0",
+                "can_data_6": "0",
+                "can_data_7": "0",
+                "can_rx_indices": "3",
+                "value": 4,
+                "coords": [
+                  110,
+                  860,
+                  210,
+                  900
+                ],
+                "tag": "CAN4"
+              },
+              {
+                "id": 20,
+                "type": "VARIABLE",
+                "name": "VAR9",
+                "x": 380,
+                "y": 880,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  330,
+                  860,
+                  430,
+                  900
+                ],
+                "tag": "VAR9"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "peripherals": {
+    "max": {
+      "CAN1_enabled": true,
+      "CAN1_baudrate": "250",
+      "CAN2_enabled": false,
+      "CAN2_baudrate": "250",
+      "PWM_enabled": false,
+      "PWM_frequency": "100",
+      "Serial_baudrate": "115200",
+      "RS485_baudrate": "115200"
+    }
+  }
+}
