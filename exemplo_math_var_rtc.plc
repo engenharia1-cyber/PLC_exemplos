@@ -1,0 +1,447 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "05/10/2026 11:07",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "RTC",
+                "name": "RTC0",
+                "x": 200,
+                "y": 80,
+                "icon": "——[RTC]——",
+                "comment": "",
+                "parent": null,
+                "rtc_mode": "System",
+                "rtc_segundos": "0",
+                "rtc_minutos": "0",
+                "rtc_horas": "0",
+                "rtc_dia": "1",
+                "rtc_mes": "1",
+                "rtc_ano": "2025",
+                "rtc_data": "01/01/2025",
+                "rtc_horario": "00:00:00",
+                "rtc_output": "segundos",
+                "coords": [
+                  150,
+                  60,
+                  250,
+                  100
+                ],
+                "tag": "RTC0"
+              },
+              {
+                "id": 1,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 440,
+                "y": 80,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  390,
+                  60,
+                  490,
+                  100
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 2,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 200,
+                "y": 160,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  150,
+                  140,
+                  250,
+                  180
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 3,
+                "type": "MATH",
+                "name": "MATH0",
+                "x": 440,
+                "y": 160,
+                "icon": "——[MTH]——",
+                "comment": "",
+                "parent": null,
+                "operation": "DIV",
+                "source_a": "",
+                "preset": "15",
+                "math_auto_formula": "",
+                "math_custom_formula": "",
+                "value_float": 3.3333333333333335,
+                "value": 3,
+                "coords": [
+                  390,
+                  140,
+                  490,
+                  180
+                ],
+                "tag": "MATH0"
+              },
+              {
+                "id": 4,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 640,
+                "y": 160,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  590,
+                  140,
+                  690,
+                  180
+                ],
+                "tag": "VAR1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 240,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 5,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 200,
+                "y": 240,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  150,
+                  220,
+                  250,
+                  260
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 6,
+                "type": "COMPARE",
+                "name": "CMP0",
+                "x": 440,
+                "y": 240,
+                "icon": "——[CMP]——",
+                "comment": "",
+                "parent": null,
+                "source_a": "VAR1",
+                "operator": "==",
+                "preset": "0",
+                "coords": [
+                  390,
+                  220,
+                  490,
+                  260
+                ],
+                "tag": "CMP0"
+              },
+              {
+                "id": 8,
+                "type": "COIL",
+                "name": "Q0.0",
+                "x": 1227,
+                "y": 240,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  220,
+                  1277,
+                  260
+                ],
+                "tag": "Q0.0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 320,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 9,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 200,
+                "y": 320,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  150,
+                  300,
+                  250,
+                  340
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 10,
+                "type": "COMPARE",
+                "name": "CMP1",
+                "x": 440,
+                "y": 320,
+                "icon": "——[CMP]——",
+                "comment": "",
+                "parent": null,
+                "source_a": "VAR1",
+                "operator": "==",
+                "preset": "1",
+                "coords": [
+                  390,
+                  300,
+                  490,
+                  340
+                ],
+                "tag": "CMP1"
+              },
+              {
+                "id": 11,
+                "type": "COIL",
+                "name": "Q0.1",
+                "x": 1227,
+                "y": 320,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  300,
+                  1277,
+                  340
+                ],
+                "tag": "Q0.1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 4,
+          "y": 400,
+          "description": "Rung 4",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 12,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 200,
+                "y": 400,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  150,
+                  380,
+                  250,
+                  420
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 13,
+                "type": "COMPARE",
+                "name": "CMP2",
+                "x": 440,
+                "y": 400,
+                "icon": "——[CMP]——",
+                "comment": "",
+                "parent": null,
+                "source_a": "VAR1",
+                "operator": "==",
+                "preset": "2",
+                "coords": [
+                  390,
+                  380,
+                  490,
+                  420
+                ],
+                "tag": "CMP2"
+              },
+              {
+                "id": 14,
+                "type": "COIL",
+                "name": "Q0.2",
+                "x": 1227,
+                "y": 400,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  380,
+                  1277,
+                  420
+                ],
+                "tag": "Q0.2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 5,
+          "y": 480,
+          "description": "Rung 5",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 15,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 200,
+                "y": 480,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  150,
+                  460,
+                  250,
+                  500
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 16,
+                "type": "COMPARE",
+                "name": "CMP3",
+                "x": 440,
+                "y": 480,
+                "icon": "——[CMP]——",
+                "comment": "",
+                "parent": null,
+                "source_a": "VAR1",
+                "operator": "==",
+                "preset": "3",
+                "coords": [
+                  390,
+                  460,
+                  490,
+                  500
+                ],
+                "tag": "CMP3"
+              },
+              {
+                "id": 17,
+                "type": "COIL",
+                "name": "Q0.3",
+                "x": 1227,
+                "y": 480,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  460,
+                  1277,
+                  500
+                ],
+                "tag": "Q0.3"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
