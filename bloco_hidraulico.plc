@@ -1,0 +1,1235 @@
+{
+  "Versão:": "Versão 1.0",
+  "Gerado:": "Editor Ladder Alfatronic",
+  "Data:": "06/10/2026 09:43",
+  "routines": [
+    {
+      "rungs": [
+        {
+          "rungId": 0,
+          "y": 80,
+          "description": "Rung 0",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 0,
+                "type": "JOYSTICK",
+                "name": "JOY0",
+                "x": 180,
+                "y": 80,
+                "icon": "——[JOY]——",
+                "comment": "",
+                "parent": null,
+                "axis": "JX",
+                "analog_pin": "I0.23",
+                "joystick_mode": "new",
+                "min_value": "210",
+                "max_value": "1750",
+                "coords": [
+                  130,
+                  60,
+                  230,
+                  100
+                ],
+                "tag": "JOY0"
+              },
+              {
+                "id": 1,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 360,
+                "y": 80,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  310,
+                  60,
+                  410,
+                  100
+                ],
+                "tag": "VAR0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 1,
+          "y": 160,
+          "description": "Rung 1",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 2,
+                "type": "JOYSTICK",
+                "name": "JOY0",
+                "x": 180,
+                "y": 160,
+                "icon": "——[JOY]——",
+                "comment": "",
+                "parent": null,
+                "axis": "JY",
+                "analog_pin": "I0.25",
+                "joystick_mode": "new",
+                "min_value": "210",
+                "max_value": "1750",
+                "coords": [
+                  130,
+                  140,
+                  230,
+                  180
+                ],
+                "tag": "JOY0"
+              },
+              {
+                "id": 3,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 360,
+                "y": 160,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  310,
+                  140,
+                  410,
+                  180
+                ],
+                "tag": "VAR1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 2,
+          "y": 240,
+          "description": "Rung 2",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 4,
+                "type": "JOYSTICK",
+                "name": "JOY0",
+                "x": 180,
+                "y": 240,
+                "icon": "——[JOY]——",
+                "comment": "",
+                "parent": null,
+                "axis": "JZ",
+                "analog_pin": "I0.26",
+                "joystick_mode": "new",
+                "min_value": "210",
+                "max_value": "1750",
+                "coords": [
+                  130,
+                  220,
+                  230,
+                  260
+                ],
+                "tag": "JOY0"
+              },
+              {
+                "id": 5,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 360,
+                "y": 240,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "new",
+                "coords": [
+                  310,
+                  220,
+                  410,
+                  260
+                ],
+                "tag": "VAR2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 3,
+          "y": 320,
+          "description": "Rung 3",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 6,
+                "type": "POTENTIOMETER",
+                "name": "POT0",
+                "x": 180,
+                "y": 320,
+                "icon": "——[POT]——",
+                "comment": "",
+                "parent": null,
+                "analog_pin": "I0.6",
+                "min_value": "0",
+                "max_value": "100",
+                "coords": [
+                  130,
+                  300,
+                  230,
+                  340
+                ],
+                "tag": "POT0"
+              },
+              {
+                "id": 7,
+                "type": "VARIABLE",
+                "name": "VAR3",
+                "x": 360,
+                "y": 320,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  310,
+                  300,
+                  410,
+                  340
+                ],
+                "tag": "VAR3"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 4,
+          "y": 400,
+          "description": "Rung 4",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 8,
+                "type": "CONTACT",
+                "name": "I0.9",
+                "x": 180,
+                "y": 400,
+                "icon": "——| |——",
+                "comment": "",
+                "parent": null,
+                "contact_type": "NA",
+                "contact_behavior": "momentary",
+                "coords": [
+                  130,
+                  380,
+                  230,
+                  420
+                ],
+                "tag": "I0.9"
+              },
+              {
+                "id": 9,
+                "type": "COUNTER",
+                "name": "C0",
+                "x": 360,
+                "y": 400,
+                "icon": "——[CONT]——",
+                "comment": "",
+                "parent": null,
+                "counter_type": "UP",
+                "preset": "100",
+                "counter_mode": "new",
+                "target_counter": "",
+                "verify_preset": false,
+                "coords": [
+                  310,
+                  380,
+                  410,
+                  420
+                ],
+                "tag": "C0"
+              },
+              {
+                "id": 10,
+                "type": "VARIABLE",
+                "name": "VAR4",
+                "x": 520,
+                "y": 400,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "coords": [
+                  470,
+                  380,
+                  570,
+                  420
+                ],
+                "tag": "VAR4"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 5,
+          "y": 480,
+          "description": "Rung 5",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 11,
+                "type": "CONTACT",
+                "name": "I0.10",
+                "x": 180,
+                "y": 480,
+                "icon": "——| |——",
+                "comment": "",
+                "parent": null,
+                "contact_type": "NA",
+                "contact_behavior": "momentary",
+                "coords": [
+                  130,
+                  460,
+                  230,
+                  500
+                ],
+                "tag": "I0.10"
+              },
+              {
+                "id": 12,
+                "type": "COUNTER",
+                "name": "C0",
+                "x": 360,
+                "y": 480,
+                "icon": "——[CONT]——",
+                "comment": "",
+                "parent": null,
+                "counter_type": "DOWN",
+                "preset": "100",
+                "counter_mode": "existing",
+                "target_counter": "",
+                "verify_preset": false,
+                "coords": [
+                  310,
+                  460,
+                  410,
+                  500
+                ],
+                "tag": "C0"
+              },
+              {
+                "id": 13,
+                "type": "VARIABLE",
+                "name": "VAR4",
+                "x": 520,
+                "y": 480,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  470,
+                  460,
+                  570,
+                  500
+                ],
+                "tag": "VAR4"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 6,
+          "y": 560,
+          "description": "Rung 6",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 14,
+                "type": "CONTACT",
+                "name": "I0.2",
+                "x": 180,
+                "y": 560,
+                "icon": "——| |——",
+                "comment": "",
+                "parent": null,
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "coords": [
+                  130,
+                  540,
+                  230,
+                  580
+                ],
+                "tag": "I0.2"
+              },
+              {
+                "id": 15,
+                "type": "COIL",
+                "name": "Q0.0",
+                "x": 1227,
+                "y": 560,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  540,
+                  1277,
+                  580
+                ],
+                "tag": "Q0.0"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 7,
+          "y": 640,
+          "description": "Rung 7",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 16,
+                "type": "CONTACT",
+                "name": "I0.3",
+                "x": 180,
+                "y": 640,
+                "icon": "——| |——",
+                "comment": "",
+                "parent": null,
+                "contact_type": "NA",
+                "contact_behavior": "toggle",
+                "coords": [
+                  130,
+                  620,
+                  230,
+                  660
+                ],
+                "tag": "I0.3"
+              },
+              {
+                "id": 17,
+                "type": "COIL",
+                "name": "Q0.1",
+                "x": 1227,
+                "y": 640,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  620,
+                  1277,
+                  660
+                ],
+                "tag": "Q0.1"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 8,
+          "y": 720,
+          "description": "Rung 8",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 18,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 180,
+                "y": 720,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  700,
+                  230,
+                  740
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 19,
+                "type": "COIL",
+                "name": "Q0.2",
+                "x": 1227,
+                "y": 720,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Positivo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  700,
+                  1277,
+                  740
+                ],
+                "tag": "Q0.2"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 9,
+          "y": 800,
+          "description": "Rung 9",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 20,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 180,
+                "y": 800,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  780,
+                  230,
+                  820
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 21,
+                "type": "COIL",
+                "name": "Q0.3",
+                "x": 1227,
+                "y": 800,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Negativo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  780,
+                  1277,
+                  820
+                ],
+                "tag": "Q0.3"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 10,
+          "y": 880,
+          "description": "Rung 10",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 22,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 180,
+                "y": 880,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  860,
+                  230,
+                  900
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 23,
+                "type": "COIL",
+                "name": "Q0.4",
+                "x": 1227,
+                "y": 880,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Positivo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  860,
+                  1277,
+                  900
+                ],
+                "tag": "Q0.4"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 11,
+          "y": 960,
+          "description": "Rung 11",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 24,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 180,
+                "y": 960,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  940,
+                  230,
+                  980
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 25,
+                "type": "COIL",
+                "name": "Q0.5",
+                "x": 1227,
+                "y": 960,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Negativo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  940,
+                  1277,
+                  980
+                ],
+                "tag": "Q0.5"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 12,
+          "y": 1040,
+          "description": "Rung 12",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 26,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 180,
+                "y": 1040,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1020,
+                  230,
+                  1060
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 27,
+                "type": "COIL",
+                "name": "Q0.6",
+                "x": 1227,
+                "y": 1040,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Positivo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  1020,
+                  1277,
+                  1060
+                ],
+                "tag": "Q0.6"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 13,
+          "y": 1120,
+          "description": "Rung 13",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 28,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 180,
+                "y": 1120,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1100,
+                  230,
+                  1140
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 29,
+                "type": "COIL",
+                "name": "Q0.7",
+                "x": 1227,
+                "y": 1120,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Negativo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  1100,
+                  1277,
+                  1140
+                ],
+                "tag": "Q0.7"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 14,
+          "y": 1200,
+          "description": "Rung 14",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 30,
+                "type": "VARIABLE",
+                "name": "VAR3",
+                "x": 180,
+                "y": 1200,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1180,
+                  230,
+                  1220
+                ],
+                "tag": "VAR3"
+              },
+              {
+                "id": 31,
+                "type": "COIL",
+                "name": "Q0.11",
+                "x": 1227,
+                "y": 1200,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Positivo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  1180,
+                  1277,
+                  1220
+                ],
+                "tag": "Q0.11"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 15,
+          "y": 1280,
+          "description": "Rung 15",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 32,
+                "type": "VARIABLE",
+                "name": "VAR4",
+                "x": 180,
+                "y": 1280,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1260,
+                  230,
+                  1300
+                ],
+                "tag": "VAR4"
+              },
+              {
+                "id": 33,
+                "type": "COIL",
+                "name": "Q0.13",
+                "x": 1227,
+                "y": 1280,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "PWM",
+                "pwm_current_init": "350",
+                "pwm_current_final": "750",
+                "pwm_ramp_init": "1500",
+                "pwm_ramp_final": "250",
+                "pwm_polarity": "Positivo",
+                "auto_formula": "(((corr_max - corr_min)/joyx_max)*val_joy)+corr_min",
+                "custom_formula": "(((750 - 350)/100)*val_joy)+350",
+                "coords": [
+                  1177,
+                  1260,
+                  1277,
+                  1300
+                ],
+                "tag": "Q0.13"
+              }
+            ]
+          }
+        },
+        {
+          "rungId": 16,
+          "y": 1360,
+          "description": "Rung 16",
+          "logic": {
+            "type": "branch",
+            "elements": [
+              {
+                "id": 35,
+                "type": "BRANCH",
+                "name": "B0",
+                "children": [
+                  40
+                ],
+                "branch_y": 1440,
+                "rung_y": 1360,
+                "parent": null,
+                "width": 200,
+                "x": 80,
+                "color": "#06b6d4",
+                "coords": [
+                  80,
+                  1360,
+                  280,
+                  1440
+                ],
+                "tag": "B0"
+              },
+              {
+                "id": 37,
+                "type": "BRANCH",
+                "name": "B2",
+                "children": [
+                  43
+                ],
+                "branch_y": 1520.0,
+                "rung_y": 1360.0,
+                "parent": null,
+                "width": 201.0,
+                "x": 80,
+                "color": "#06b6d4",
+                "coords": [
+                  80,
+                  1360.0,
+                  281.0,
+                  1520.0
+                ],
+                "tag": "B2"
+              },
+              {
+                "id": 38,
+                "type": "BRANCH",
+                "name": "B1",
+                "children": [
+                  44
+                ],
+                "branch_y": 1600.0,
+                "rung_y": 1360,
+                "parent": null,
+                "width": 200,
+                "x": 80,
+                "color": "#06b6d4",
+                "coords": [
+                  80,
+                  1360,
+                  280,
+                  1600.0
+                ],
+                "tag": "B1"
+              },
+              {
+                "id": 39,
+                "type": "BRANCH",
+                "name": "B3",
+                "children": [
+                  45
+                ],
+                "branch_y": 1680.0,
+                "rung_y": 1360,
+                "parent": null,
+                "width": 200,
+                "x": 80,
+                "color": "#06b6d4",
+                "coords": [
+                  80,
+                  1360,
+                  280,
+                  1680.0
+                ],
+                "tag": "B3"
+              },
+              {
+                "id": 34,
+                "type": "VARIABLE",
+                "name": "VAR0",
+                "x": 180,
+                "y": 1360,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": null,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1340,
+                  230,
+                  1380
+                ],
+                "tag": "VAR0"
+              },
+              {
+                "id": 40,
+                "type": "VARIABLE",
+                "name": "VAR1",
+                "x": 180,
+                "y": 1440.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": 35,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1420.0,
+                  230,
+                  1460.0
+                ],
+                "tag": "VAR1"
+              },
+              {
+                "id": 43,
+                "type": "VARIABLE",
+                "name": "VAR2",
+                "x": 180,
+                "y": 1520.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": 37,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1500.0,
+                  230,
+                  1540.0
+                ],
+                "tag": "VAR2"
+              },
+              {
+                "id": 44,
+                "type": "VARIABLE",
+                "name": "VAR3",
+                "x": 180,
+                "y": 1600.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": 38,
+                "scope": "local",
+                "mode": "Ler",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1580.0,
+                  230,
+                  1620.0
+                ],
+                "tag": "VAR3"
+              },
+              {
+                "id": 45,
+                "type": "VARIABLE",
+                "name": "VAR4",
+                "x": 180,
+                "y": 1680.0,
+                "icon": "——[VAR]——",
+                "comment": "",
+                "parent": 39,
+                "scope": "local",
+                "mode": "Escrever",
+                "variable_type": "INT",
+                "array_size": 0,
+                "initial_value": "0",
+                "preset": "0",
+                "float_decimals": 2,
+                "element_mode": "existing",
+                "coords": [
+                  130,
+                  1660.0,
+                  230,
+                  1700.0
+                ],
+                "tag": "VAR4"
+              },
+              {
+                "id": 46,
+                "type": "CONTACT",
+                "name": "I0.0",
+                "x": 480,
+                "y": 1360,
+                "icon": "——| |——",
+                "comment": "",
+                "parent": null,
+                "contact_type": "NF",
+                "contact_behavior": "toggle",
+                "coords": [
+                  430,
+                  1340,
+                  530,
+                  1380
+                ],
+                "tag": "I0.0"
+              },
+              {
+                "id": 47,
+                "type": "TIMER",
+                "name": "T0",
+                "x": 740,
+                "y": 1360,
+                "icon": "——[TIM]——",
+                "comment": "",
+                "parent": null,
+                "timer_type": "TOF",
+                "preset": "3000",
+                "coords": [
+                  690,
+                  1340,
+                  790,
+                  1380
+                ],
+                "tag": "T0"
+              },
+              {
+                "id": 48,
+                "type": "COIL",
+                "name": "Q0.8",
+                "x": 1227,
+                "y": 1360,
+                "icon": "——( )——",
+                "comment": "",
+                "parent": null,
+                "coil_type": "NORMAL",
+                "coords": [
+                  1177,
+                  1340,
+                  1277,
+                  1380
+                ],
+                "tag": "Q0.8"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
